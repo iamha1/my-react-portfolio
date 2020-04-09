@@ -65,12 +65,12 @@ export default function About() {
         <IconButton>
           <a className={classes.links} href="tel:123-456-7890">
             <PhoneIphoneIcon className={classes.links} />
-            123-456-7890
+            
           </a>
         </IconButton>
         <IconButton>
           <a className={classes.links} href="mailto:nguyenthingocha2@gmail.com">
-            <MailOutlineIcon /> myemail@gmail.com
+            <MailOutlineIcon /> 
           </a>
         </IconButton>
       </CardActions>
