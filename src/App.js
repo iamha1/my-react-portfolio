@@ -1,10 +1,10 @@
 import React from "react";
-import Nav from "./components/nav/nav";
-import Footer from "./components/footer/footer";
+import Nav from "./components/Navbar/nav";
+import Footer from "./components/Foot/footer";
 import { Grid } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Container from "./components/about/container";
-import Body from "./components/body/body";
+import Container from "./components/Head/container";
+import Body from "./components/Body/body";
 
 import "./App.css";
 
