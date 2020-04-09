@@ -1,40 +1,35 @@
-import React, { Component } from 'react';
-import './App.css';
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './components/main';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Nav from "./components/nav/nav";
+import Footer from "./components/footer/footer";
+import { Grid } from "@material-ui/core";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Container from "./components/about/container";
+import Body from "./components/body/body";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="demo-big-content">
-    <Layout>
-        <Header 
-        className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MyPortfolio</Link>} scroll>
-            <Navigation>
-                <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Header>
-        <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MyPortfolio</Link>}>
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-        </Drawer>
-        <Content>
-            <div className="page-content" />
-            <Main/>
-        </Content>
-    </Layout>
-</div>
+import "./App.css";
 
-    );
-  }
+function App() {
+  return (
+    <>
+      <Router>
+        <Grid container direction="column">
+          <Grid item>
+            <Nav />
+            <br />
+          </Grid>
+          <Grid item container>
+            <Switch>
+              <Route path="/reactfolio/about" exact component={Container} />
+              <Route path="/reactfolio/" exact component={Body} />
+            </Switch>
+          </Grid>
+
+          <br />
+          <Footer />
+        </Grid>
+      </Router>
+    </>
+  );
 }
 
 export default App;
