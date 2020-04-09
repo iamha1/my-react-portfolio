@@ -2,8 +2,7 @@ export default [
     {
       id: "1",
       name: "Password-Generator",
-      image:
-        "",
+      image: "img/password-generator-project.jpg", 
       description: "",
       git: "https://github.com/iamha1/password-generator",
       deployed: "https://iamha1.github.io/password-generator/",

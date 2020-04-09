@@ -52,9 +52,7 @@ export default function About() {
       />
       <CardMedia
         className={classes.media}
-        image={
-          ""
-        }
+        image={require('../../img/ha.jpg')}
       />
       <CardContent>
         <Typography
