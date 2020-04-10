@@ -38,7 +38,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              This page was created with Material-UI
+              
             </a>{" "}
           </Typography>
         </Toolbar>
