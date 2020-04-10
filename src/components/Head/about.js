@@ -52,7 +52,7 @@ export default function About() {
       />
       <CardMedia
         className={classes.media}
-        image={require('../../img/IMG_2914.jpg')}
+        image="/my-react-portfolio/img/IMG_2914.jpg"
       />
       <CardContent>
         <Typography
