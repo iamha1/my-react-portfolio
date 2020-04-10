@@ -31,7 +31,7 @@ export default function Footer() {
       <AppBar color="primary" className={classes.appBar}>
         <Toolbar className={classes.tool}>
           <Typography>
-            Copyright 2020 {" "}
+            Copyright © 2020 Ha Nguyen {" "}
             <a
               className={classes.links}
               href="https://material-ui.com/"
