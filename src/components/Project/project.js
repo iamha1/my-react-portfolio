@@ -7,8 +7,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import PublicIcon from "@material-ui/icons/Public";
 import IconButton from "@material-ui/core/IconButton";
+import FlightRoundedIcon from '@material-ui/icons/FlightRounded';
 
 const useStyles = makeStyles({
   root: {
@@ -63,7 +63,7 @@ const Project = ({ id, name, image, description, git, deployed }) => {
           </IconButton>
           <IconButton size="medium">
             <a href={deployed} target="_blank" rel="noopener noreferrer">
-              <PublicIcon fontSize="large" className={classes.links} />
+              <FlightRoundedIcon fontSize="large" className={classes.links} />
             </a>
           </IconButton>
         </CardActions>
