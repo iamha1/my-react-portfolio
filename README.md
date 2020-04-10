@@ -4,7 +4,7 @@ This project is to test my understanding of React.js how to apply in in building
 
 ## Layout of my project:
 
-![screenshot of the project](img/front.jpg)
+![screenshot of the project](src/img/front.jpg)
 
 ## Available Scripts
 
